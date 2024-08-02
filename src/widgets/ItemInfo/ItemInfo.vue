@@ -1,13 +1,4 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  setup() {
-    
-  },
-})
+<script lang="ts" setup>
 </script>
-<template>
-  
-</template>
+<template></template>
 <style lang="scss" module></style>
