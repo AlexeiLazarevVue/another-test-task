@@ -1,5 +1,6 @@
 export enum StoreNames {
-  INVENTORY = 'inventory'
+  INVENTORY = 'inventory',
+  MODALS = 'modals'
 }
 
 export type InventoryItem = {
@@ -7,4 +8,9 @@ export type InventoryItem = {
   title: string,
   description: string,
   sort: number
+}
+
+export enum ModalNames {
+  WARNING_MODAL = 'warning_modal',
+  ITEM_INFO_MODAL = 'item-info_modal'
 }
