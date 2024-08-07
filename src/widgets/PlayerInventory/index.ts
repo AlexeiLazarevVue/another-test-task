@@ -1,3 +1,3 @@
 import PlayerInventory from './PlayerInventory.vue'
 
-export {PlayerInventory as PlayerInventoryComponent}
+export { PlayerInventory as PlayerInventoryComponent }

@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .js,.ts,.vue ./",
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue ./",
+    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore"
   },
   "dependencies": {
     "@vue/eslint-config-typescript": "^13.0.0",
@@ -14,11 +17,18 @@
     "vue": "^3.4.35"
   },
   "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
     "@types/node": "^22.1.0",
     "@vitejs/plugin-vue": "^5.0.5",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-vue": "^9.27.0",
+    "eslint-plugin-vuejs-accessibility": "^2.4.1",
+    "prettier": "^3.3.3",
     "sass": "^1.77.8",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4",
-    "vue-tsc": "^2.0.24"
+    "vite": "^5.3.5",
+    "vue-tsc": "^2.0.29"
   }
 }

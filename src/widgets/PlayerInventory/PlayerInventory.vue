@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { InventoryListComponent, PlayerInfoComponent } from "/@src/widgets/";
+  import { WarningModalComponent } from '/@src/entities/'
+  import { InventoryListComponent, PlayerInfoComponent } from '/@src/widgets/'
 </script>
 <template>
   <div :class="$style['player-inventory']">
@@ -7,17 +8,20 @@ import { InventoryListComponent, PlayerInfoComponent } from "/@src/widgets/";
       <PlayerInfoComponent />
       <InventoryListComponent />
     </div>
+    <WarningModalComponent />
   </div>
 </template>
 <style lang="scss" module>
-.player-inventory {
-  // background: #262626;
-  width: 775px;
-  height: 586px;
-  &__main-info {
+  .player-inventory {
     display: flex;
     gap: 25px;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 775px;
+    height: 586px;
+    &__main-info {
+      display: flex;
+      gap: 25px;
+      justify-content: space-between;
+    }
   }
-}
 </style>

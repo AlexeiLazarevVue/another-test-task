@@ -1,3 +1,3 @@
 import LoadingText from './LoadingText.vue'
 
-export {LoadingText as LoadingTextComponent}
+export { LoadingText as LoadingTextComponent }

@@ -1,1 +1,1 @@
-export { useModalsStore } from "./modals.store";
+export { useModalsStore } from './modals.store'

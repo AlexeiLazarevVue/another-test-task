@@ -1,3 +1,3 @@
 import Draggable from './Draggable.vue'
 
-export {Draggable as DraggableComponent}
+export { Draggable as DraggableComponent }

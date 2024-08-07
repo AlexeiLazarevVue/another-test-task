@@ -1,3 +1,3 @@
 import InventoryList from './InventoryList.vue'
 
-export {InventoryList as InventoryListComponent}
+export { InventoryList as InventoryListComponent }

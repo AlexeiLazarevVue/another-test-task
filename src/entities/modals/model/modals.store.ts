@@ -1,21 +1,22 @@
-import { defineStore } from "pinia";
-import { StoreNames } from "../../../shared/types";
+import { defineStore } from 'pinia'
+
+import { ModalNames,StoreNames } from '/@src/shared/types'
 
 export const useModalsStore = defineStore(StoreNames.MODALS, {
   state: () => ({
-    activeModals: [],
+    activeModals: [ModalNames.WARNING_MODAL] as string[],
   }),
   getters: {
-    checkModal: (state, modalName: string) => {
-      return state.activeModals.includes(modalName)
-    }
+    checkModal: (state) => {
+      return (modalName: string) => state.activeModals.includes(modalName)
+    },
   },
   actions: {
-  showModal: (state, modalName: string) => {
-    state.activeModals.push(modalName)
+    showModal(modalName: string) {
+      this.activeModals.push(modalName)
+    },
+    closeModal(modalName: string) {
+      this.activeModals = this.activeModals.filter((activeModal) => activeModal !== modalName)
+    },
   },
-  closeModal: (state, modalName: string) => {
-    state.activeModals.filter(activeModal => activeModal !== modalName)
-  },
-  }
 })

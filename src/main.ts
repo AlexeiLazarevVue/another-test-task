@@ -1,11 +1,14 @@
-import { createApp } from 'vue';
-import App from './App.vue';
-import { createPinia } from 'pinia';
-import { DraggableComponent, LoadingTextComponent } from './shared/components';
+import { createPinia } from 'pinia'
+import { createApp } from 'vue'
 
-const app = createApp(App);
+import App from './App.vue'
+import { ButtonComponent, DraggableComponent, InputComponent,LoadingTextComponent } from './shared/components'
 
-app.component('draggable', DraggableComponent);
-app.component('loading-text', LoadingTextComponent);
+const app = createApp(App)
 
-app.use(createPinia()).mount('#app');
+app.component('draggable', DraggableComponent)
+app.component('loading-text', LoadingTextComponent)
+app.component('button-component', ButtonComponent)
+app.component('input-component', InputComponent)
+
+app.use(createPinia()).mount('#app')

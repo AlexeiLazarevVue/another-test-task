@@ -1,3 +1,3 @@
 import PlayerInfo from './PlayerInfo.vue'
 
-export {PlayerInfo as PlayerInfoComponent}
+export { PlayerInfo as PlayerInfoComponent }

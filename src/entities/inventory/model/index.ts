@@ -1,1 +1,1 @@
-export { useInventoryStore } from "./inventory.store";
+export { useInventoryStore } from './inventory.store'
