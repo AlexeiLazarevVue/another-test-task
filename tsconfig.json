@@ -10,7 +10,6 @@
   ],
   "compilerOptions": {
     "baseUrl": "/another-test-task/",
-    "skipLibCheck": true,
     "paths": {
       "/@src/*": ["src/*"]
     },
